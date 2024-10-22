@@ -2,7 +2,7 @@ import shutil
 import os
 import sys
 
-def move_to_program_files(source_file, folder_name="MyApp"):
+def move_to_program_files(source_file, folder_name="PyExampler"):
     # Path to "C:\Program Files"
     program_files = "C:\\Program Files (x86)"
     
@@ -30,5 +30,5 @@ def move_to_program_files(source_file, folder_name="MyApp"):
         print(f"An error occurred: {e}")
 
 # Example Usage
-source_file = os.getcwd() + "<FILE NAME HERE>"
-move_to_program_files(source_file, folder_name="MyAppFolder")
+source_file = os.getcwd() + "PyExampler.exe"
+move_to_program_files(source_file, folder_name="PyExampler")

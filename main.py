@@ -16,14 +16,10 @@ WELCMOE_MESSAGE = """
 +-------------------------------------------------------------+
 """
 
-
 fig = Figlet(font='standard')
 
 print(fig.renderText('PyExampler'))
 print(WELCMOE_MESSAGE)
-
-
-
 
 def main():
     while True:

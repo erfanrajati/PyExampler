@@ -39,7 +39,7 @@ WELCMOE_MESSAGE = """
 |  and PyExampler will generate you cool examples             |
 |  that you can use for your class!                           |
 |                                                             |
-|  - By ErfanRajati                                           |
+|  - By Erfan Rajati                                           |
 +-------------------------------------------------------------+
 """
 GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split(',')

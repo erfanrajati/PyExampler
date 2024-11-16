@@ -3,7 +3,15 @@
         "x = 10\ny = 'Hello'\nz = 3.14",
         "x = str(10)  # x will be '10'\ny = float('3.14')  # y will be 3.14\nz = int('5')  # z will be 5",
         "name = input('Enter your name: ')\nage = int(input('Enter your age: '))",
-        "x = ''  # False\nif not x:\n    print('Empty string is false')\n\nnum = 0  # False\nif not num:\n    print('Zero is false')"
+        "x = ''  # False\nif not x:\n    print('Empty string is false')\n\nnum = 0  # False\nif not num:\n    print('Zero is false')",
+        "favorite_hero = 'Spider-Man'\nprint(f'My favorite superhero is: {favorite_hero}')",
+        "scoops = 2\nflavor = 'chocolate'\nprint(f'You ordered {scoops} scoops of {flavor} ice cream!')",
+        "wallet = 50  # dollars\nprice_of_game = 30\nwallet -= price_of_game\nprint(f'You bought the game and have ${wallet} left.')",
+        "student_name = 'Harry'\nhouse = 'Gryffindor'\nprint(f'{student_name} has been sorted into {house}!')",
+        "robot_name = 'Bolt'\nbattery_level = 100\nprint(f'{robot_name} has {battery_level}% battery remaining.')",
+        "slices_per_pizza = 8\nnumber_of_pizzas = 3\ntotal_slices = slices_per_pizza * number_of_pizzas\nprint(f'We have {total_slices} slices for the party!')",
+        "noun = 'cat'\nverb = 'jumps'\nplace = 'garden'\nprint(f'The {noun} {verb} in the {place}.')",
+        "player_name = 'Alex'\nhealth = 100\nstrength = 75\nprint(f'{player_name} has {health} health and {strength} strength.')"
     ],
     "Operators": [
         "a = 10 + 5\nb = 10 - 5\nc = 10 * 5\nd = 10 / 5",

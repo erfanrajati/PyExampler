@@ -42,45 +42,25 @@ WELCMOE_MESSAGE = """
 |  - By ErfanRajati                                           |
 +-------------------------------------------------------------+
 """
-GOODBYE_MESSAGE = [
-    "Stay curious, keep exploring!",
-    "Goodbye for now, but not forever!",
-    "May the code be with you!",
-    "Catch you on the flip side!",
-    "Stay safe and keep smiling :)",
-    "Until next time, adventurer!",
-    "Keep calm and carry on coding!",
-    "You rock! See you soon!",
-    "Thanks for stopping by. Take care!",
-    "Stay awesome, see you next time!",
-    "Adios, amigo! Keep crushing it!",
-    "Keep up the great work! Bye for now.",
-    "Farewell, and happy coding!",
-    "Mission accomplished. See you later!",
-    "Goodbye, and may your bugs be few!",
-    "Stay sharp! Come back soon.",
-    "Time to power down. Until next time!",
-    "Take it easy, coder!",
-    "Goodbye, and have a great day ahead!",
-    "Logging off. Be safe out there!"
-]
+GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split(',')
 
 
 fig = Figlet(font='standard')
 
-os.system("cls")
+os.system("cls" if os.name == 'nt' else "clear")
 print(fig.renderText('PyExampler'))
 print(WELCMOE_MESSAGE)
 
 def main():
     while True:
-        print("\nChoose from available topics (0 to exit):")
+        print("\nChoose from available topics (0 to exit, default 0):")
         for i in range(1, len(TOPICS)+1):
             print(f"{i}. {TOPICS[i-1]}")
 
         while True:
             try:
-                userIn = int(input("\n>>> ")) - 1
+                userIn = input("\n>>> ")
+                userIn = int(userIn)-1 if userIn else -1
                 if userIn == -1 : return
                 if TOPICS[userIn]: break
             except:
@@ -94,12 +74,13 @@ def main():
 
         while True:
             print()
-            print("More examples? (yes/no)")
+            print("More examples? (yes/no, default no)")
             userIn = input(">>> ")
+            userIn = userIn if userIn else "no"
             if userIn == "no":
                 return
             elif userIn == "yes":
-                os.system("cls")
+                os.system("cls" if os.name == 'nt' else "clear")
                 print(fig.renderText('PyExampler'))
                 break
             else:
@@ -108,7 +89,7 @@ def main():
         
 if __name__ == "__main__":
     main()
-    os.system("cls")
+    os.system("cls" if os.name == 'nt' else "clear")
     print(fig.renderText('PyExampler'))
     input(F"\n{random.choice(GOODBYE_MESSAGE)}\n\n")
 

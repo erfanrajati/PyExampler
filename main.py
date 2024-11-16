@@ -47,7 +47,9 @@ GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split(',')
 
 fig = Figlet(font='standard')
 
+# To execute the correct shell command based on Operating System
 os.system("cls" if os.name == 'nt' else "clear")
+
 print(fig.renderText('PyExampler'))
 print(WELCMOE_MESSAGE)
 

@@ -39,10 +39,10 @@ WELCMOE_MESSAGE = """
 |  and PyExampler will generate you cool examples             |
 |  that you can use for your class!                           |
 |                                                             |
-|  - By Erfan Rajati                                           |
+|  - By Erfan Rajati                                          |
 +-------------------------------------------------------------+
 """
-GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split(',')
+GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split('|')
 
 
 fig = Figlet(font='standard')

@@ -42,7 +42,10 @@ WELCMOE_MESSAGE = """
 |  - By Erfan Rajati                                          |
 +-------------------------------------------------------------+
 """
-GOODBYE_MESSAGE = open("goodbye_message.txt", 'r').read().split('|')
+GOODBYE_MESSAGE = open(
+    get_resource_path("goodbye_message.txt"),
+    'r'
+).read().split('|')
 
 
 fig = Figlet(font='standard')

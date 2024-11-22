@@ -1,6 +1,6 @@
 # PyExampler Project
 
-Welcome to the **PyExampler** project! This documentation will guide you through two main installation methods:  
+Welcome to the **PyExampler** project! This documentation will guide you through two main installation methods (for v1.0):  
 1. **Installing a prebuilt version from the releases**  
 2. **Cloning the repository and building it yourself**
 

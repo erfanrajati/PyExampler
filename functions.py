@@ -44,13 +44,3 @@ WELCMOE_MESSAGE = """
 +-------------------------------------------------------------+
 """
 
-db:dict = read_json_file('python_guide_examples.json')
-
-python = Language(name="Python", json_dict=db)
-
-
-
-menu = MainMenu(language=python, goodbye_message=GOODBYE_MESSAGE)
-
-menu.main_loop()
-menu.goodbye()
